@@ -1,1 +1,1 @@
-Simple hash map
+Simple implementation of a hash map using separate chaining. The table allocates more buckets if the load factor is more than 100% and frees buckets if the loadfactor falls below 20%.
