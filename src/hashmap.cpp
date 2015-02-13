@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 #include "hashmap.h"
 
-size_t nextprime(size_t g)
+size_t hashmap::nextprime(size_t g)
     {
     int i;
     size_t smalldivisor;
@@ -53,7 +53,7 @@ size_t nextprime(size_t g)
     }
 
 
-size_t casesensitivehash(const char * cp)
+size_t hashmap::casesensitivehash(const char * cp)
     {
     size_t hash_temp = 0;
     while (*cp != '\0')

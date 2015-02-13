@@ -23,7 +23,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include <assert.h>
 #include <stddef.h>
 #include <string.h>
-
+namespace hashmap{
 extern size_t nextprime(size_t g);
 extern size_t casesensitivehash(const char * cp);
 
@@ -270,6 +270,4 @@ template <class record> class chainLink
         ~chainLink(){}
     };
 
-
-
-
+}
