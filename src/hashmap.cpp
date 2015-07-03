@@ -58,11 +58,7 @@ size_t hashmap::casesensitivehash(const char * cp)
     size_t hash_temp = 0;
     while (*cp != '\0')
         {
-        if(hash_temp < 0)
-            hash_temp = (hash_temp << 1) +1;
-        else
-            hash_temp = hash_temp << 1;
-        hash_temp ^= *cp;
+		hash_temp = 31 * hash_temp + *cp;
         ++cp;
         }
     return hash_temp;
