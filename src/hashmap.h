@@ -19,6 +19,8 @@ You should have received a copy of the GNU General Public License
 along with CSTHASH; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
+#ifndef HASHMAP_H
+#define HASHMAP_H
 
 #include <assert.h>
 #include <stddef.h>
@@ -271,3 +273,4 @@ template <class record> class chainLink
     };
 
 }
+#endif
